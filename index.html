@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кулинарный лагерь "Вкусное путешествие по России" | Екатеринбург</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Навигационное меню -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Вкусное путешествие</div>
+            <ul class="nav-links">
+                <li><a href="#about">О лагере</a></li>
+                <li><a href="#program">Программа</a></li>
+                <li><a href="#info">Информация</a></li>
+                <li><a href="#form">Запись</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Секция "героя" -->
+    <section class="hero parallax">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Кулинарный осенний лагерь<br>"Вкусное путешествие по России"</h1>
+                <p>Приглашаем школьников 6-9 классов на самые вкусные каникулы в Екатеринбурге!</p>
+                <a href="#form" class="btn">Записаться сейчас</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция "О лагере" -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>О лагере</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Мы запускаем самый вкусный, детский, кулинарный осенний лагерь в Екатеринбурге для школьников (6-9 класс).</p>
+                    <p>Хотите, чтобы ваш ребенок узнал тонкости выпечки и попробовал традиционные сладости? Приглашаем на увлекательные каникулы!</p>
+                    <p>На занятиях ребята не только научатся готовить, но и разовьют командный дух. Пусть ваши дети проведут каникулы с пользой и удовольствием!</p>
+                    <a href="#program" class="btn">Узнать программу</a>
+                </div>
+                <div class="about-image">
+                    <img src="./images/дети.jpg" alt="Дети на кулинарном мастер-классе">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция программы с интерактивной духовкой -->
+    <section id="program" class="program">
+        <div class="container">
+            <h2>Что ждет ребенка</h2>
+
+            <!-- Топовая духовка -->
+            <div class="oven-section">
+                <div class="oven-container" id="ovenTrigger">
+                    <div class="oven"></div>
+                </div>
+            </div>
+                <p class="oven-instruction">Нажмите на духовку, чтобы увидеть наши кулинарные сюрпризы!</p>
+            </div>
+
+            <!-- Карточки рецептов (появляются по клику) -->
+            <div class="recipe-cards" id="recipeCards">
+                <div class="recipe-card fade-in">
+                    <img src="images/тульскийпряник.jpg" alt="Тульский пряник">
+                    <div class="recipe-card-content">
+                        <h3>Тульский пряник</h3>
+                        <p>Научимся готовить знаменитый тульский пряник с традиционными начинками и узнаем историю этого лакомства.</p>
+                    </div>
+                </div>
+                <div class="recipe-card fade-in">
+                    <img src="./images/осетинскаяфигня.jpg" alt="Осетинский пирог">
+                    <div class="recipe-card-content">
+                        <h3>Настоящий осетинский пирог</h3>
+                        <p>Приготовим традиционный осетинский пирог с разными начинками по старинным рецептам.</p>
+                    </div>
+                </div>
+                <div class="recipe-card fade-in">
+                    <img src="./images/вак-бэлиш.jpg" alt="Вак-бэлиш">
+                    <div class="recipe-card-content">
+                        <h3>Вак-бэлиш</h3>
+                        <p>Познакомимся с традиционным блюдом башкирской кухни - треугольными пирожками с начинкой.</p>
+                    </div>
+                </div>
+                <div class="recipe-card fade-in">
+                    <img src="./images/ватрушка.jpg" alt="Уральская ватрушка">
+                    <div class="recipe-card-content">
+                        <h3>Уральская ватрушка</h3>
+                        <p>Приготовим пышные уральские ватрушки с творогом и другими начинками.</p>
+                    </div>
+                </div>
+                <div class="recipe-card fade-in">
+                    <img src="./images/сочни.jpg" alt="Сибирские сочни">
+                    <div class="recipe-card-content">
+                        <h3>Сибирские сочни с творогом</h3>
+                        <p>Научимся готовить нежные сибирские сочни с творожной начинкой - традиционное блюдо Сибири.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Секция практической информации -->
+    <section id="info" class="info">
+        <div class="container">
+            <h2>Практическая информация</h2>
+            <div class="info-grid">
+                <div class="info-item fade-in">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Адрес</h3>
+                    <p>г. Екатеринбург, ул. Ясная 1/5, 1 этаж</p>
+                </div>
+                <div class="info-item fade-in">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Сроки обучения</h3>
+                    <p>с 27 октября – 31 октября</p>
+                </div>
+                <div class="info-item fade-in">
+                    <i class="fas fa-clock"></i>
+                    <h3>Занятость</h3>
+                    <p>2-3 часа в день</p>
+                </div>
+                <div class="info-item fade-in">
+                    <i class="fas fa-sun"></i>
+                    <h3>Время занятия</h3>
+                    <p>с 11:00</p>
+                </div>
+                <div class="info-item fade-in">
+                    <i class="fas fa-ruble-sign"></i>
+                    <h3>Стоимость</h3>
+                    <p>3 тысячи рублей</p>
+                </div>
+                <div class="info-item fade-in">
+                    <i class="fas fa-users"></i>
+                    <h3>Возраст</h3>
+                    <p>Школьники 6-9 классов</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция формы -->
+    <section id="form" class="form-section parallax">
+        <div class="container">
+            <h2>Записаться в лагерь</h2>
+            <div class="form-container">
+                <form id="camp-form">
+                    <div class="form-group">
+                        <label for="name">Имя ребенка</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="age">Возраст</label>
+                        <input type="number" id="age" name="age" min="12" max="15" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="parent">Имя родителя</label>
+                        <input type="text" id="parent" name="parent" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Телефон</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Дополнительная информация</label>
+                        <textarea id="message" name="message"></textarea>
+                    </div>
+                    <button type="submit" class="btn">Отправить заявку</button>
+                </form>
+                <p style="margin-top: 20px; font-size: 0.9rem;">После подачи заявки с вами свяжется наш специалист. Оплата производится только после заключения договора.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция контактов -->
+    <section id="contacts" class="contacts">
+        <div class="container">
+            <h2>Контакты</h2>
+            <p>Если у вас есть вопросы, звоните или пишите нам!</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <h3>Телефон</h3>
+                    <p>+7 (962) 313-90-72 (Екатерина)</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>info@culinarycamp.ru</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Адрес</h3>
+                    <p>г. Екатеринбург, ул. Ясная 1/5, 1 этаж</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>© 2023 Кулинарный лагерь "Вкусное путешествие по России". Все права защищены.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-vk"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./script/1.js"></script>
+</body>
+</html>
