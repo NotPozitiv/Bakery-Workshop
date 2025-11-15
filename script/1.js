@@ -39,20 +39,12 @@
                     setTimeout(() => {
                         this.style.transform = 'scale(1)';
                     }, 300);
+                    
+                    // Скрыть стрелку после открытия
+                    document.querySelector('.bounce-arrow').style.display = 'none';
                 }
             });
 
-            // Параллакс для секций с фоновым изображением
-            window.addEventListener('scroll', function() {
-                const scrolled = window.pageYOffset;
-                const parallaxElements = document.querySelectorAll('.parallax');
-                
-                parallaxElements.forEach(function(el) {
-                    const speed = 0.5;
-                    el.style.backgroundPositionY = -(scrolled * speed) + 'px';
-                });
-            });
-            
             // Анимация появления элементов при скролле
             const fadeElements = document.querySelectorAll('.fade-in');
             

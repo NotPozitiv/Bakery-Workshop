@@ -11,13 +11,16 @@
     <!-- Навигационное меню -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="logo">Вкусное путешествие</div>
+            <div class="logo-container">
+                <img src="./images/logofinal.png" class="logofinal" alt="логотип">
+                <div class="logo">Вкусное путешествие</div>
+            </div>
             <ul class="nav-links">
-                <li><a href="#about">О лагере</a></li>
-                <li><a href="#program">Программа</a></li>
-                <li><a href="#info">Информация</a></li>
-                <li><a href="#form">Запись</a></li>
-                <li><a href="#contacts">Контакты</a></li>
+                <li><a href="#about"><i class="fas fa-info-circle"></i> О лагере</a></li>
+                <li><a href="#program"><i class="fas fa-list-alt"></i> Программа</a></li>
+                <li><a href="#info"><i class="fas fa-info"></i> Информация</a></li>
+                <li><a href="#form"><i class="fas fa-edit"></i> Запись</a></li>
+                <li><a href="#contacts"><i class="fas fa-address-book"></i> Контакты</a></li>
             </ul>
         </div>
     </nav>
@@ -39,9 +42,10 @@
             <h2>О лагере</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>Мы запускаем самый вкусный, детский, кулинарный осенний лагерь в Екатеринбурге для школьников (6-9 класс).</p>
-                    <p>Хотите, чтобы ваш ребенок узнал тонкости выпечки и попробовал традиционные сладости? Приглашаем на увлекательные каникулы!</p>
-                    <p>На занятиях ребята не только научатся готовить, но и разовьют командный дух. Пусть ваши дети проведут каникулы с пользой и удовольствием!</p>
+                    <p>Приглашаем школьников 6-9 классов на увлекательные осенние каникулы в нашем кулинарном лагере в Екатеринбурге!</p>
+                    <p>Мы предлагаем уникальную программу, где ребята смогут познакомиться с кулинарными традициями разных регионов России, научиться готовить традиционные блюда и освоить основы кулинарного мастерства.</p>
+                    <p>В программе лагеря: практические мастер-классы, знакомство с культурой и традициями разных народов России, развитие командного духа и творческих способностей.</p>
+                    <p>Подарите своему ребенку незабываемые каникулы, наполненные вкусными открытиями и новыми друзьями!</p>
                     <a href="#program" class="btn">Узнать программу</a>
                 </div>
                 <div class="about-image">
@@ -58,11 +62,14 @@
 
             <!-- Топовая духовка -->
             <div class="oven-section">
+                <div class="bounce-arrow">
+                    <i class="fas fa-arrow-down"></i>
+                </div>
                 <div class="oven-container" id="ovenTrigger">
-                    <div class="oven"><img class="tasty" src="./images/переделать.jpg" alt="Дети на кулинарном мастер-классе"></div>
+                    <div class="oven"><img class="tasty" src="./images/переделать.png" alt="Дети на кулинарном мастер-классе"></div>
                 </div>
             </div>
-                <p class="oven-instruction">Нажмите на духовку, чтобы увидеть наши кулинарные сюрпризы!</p>
+                <p class="oven-instruction">Нажмите на картинку, чтобы увидеть наши кулинарные сюрпризы!</p>
             </div>
 
             <!-- Карточки рецептов (появляются по клику) -->
@@ -151,7 +158,7 @@
             <div class="form-container">
                 <form id="camp-form">
                     <div class="form-group">
-                        <label for="name">Фио ребенка</label>
+                        <label for="name">ФИО ребенка</label>
                         <input type="text" id="name" name="name" required>
                     </div>
                     <div class="form-group">
@@ -159,7 +166,7 @@
                         <input type="number" id="age" name="age" min="12" max="15" required>
                     </div>
                     <div class="form-group">
-                        <label for="parent">Фио родителя</label>
+                        <label for="parent">ФИО родителя</label>
                         <input type="text" id="parent" name="parent" required>
                     </div>
                     <div class="form-group">
