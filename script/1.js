@@ -1,12 +1,29 @@
 // Параллакс эффект и анимации при скролле
         document.addEventListener('DOMContentLoaded', function() {
             const navbar = document.querySelector('.navbar');
+            const hamburger = document.getElementById('hamburger');
+            const navLinks = document.getElementById('navLinks');
+            
             window.addEventListener('scroll', function() {
                 if (window.scrollY > 100) {
                     navbar.classList.add('scrolled');
                 } else {
                     navbar.classList.remove('scrolled');
                 }
+            });
+
+            // Меню 
+            hamburger.addEventListener('click', function() {
+                this.classList.toggle('active');
+                navLinks.classList.toggle('active');
+            });
+
+            // Закрытие меню при клике
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', function() {
+                    hamburger.classList.remove('active');
+                    navLinks.classList.remove('active');
+                });
             });
 
             // Плавная прокрутка
@@ -24,7 +41,7 @@
                 });
             });
 
-            // Интерактивная духовка
+            // Интерактивная картинка
             const ovenTrigger = document.getElementById('ovenTrigger');
             const recipeCards = document.getElementById('recipeCards');
             let ovenOpened = false;
@@ -34,7 +51,7 @@
                     recipeCards.classList.add('active');
                     ovenOpened = true;
                     
-                    // Анимация для духовки при открытии
+                    // при открытии
                     this.style.transform = 'scale(1.1)';
                     setTimeout(() => {
                         this.style.transform = 'scale(1)';
