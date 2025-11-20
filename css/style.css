@@ -37,7 +37,7 @@
         }
         
         .nav-container {
-            width: 90%;
+            width: 100%;
             max-width: 1200px;
             margin: 0 auto;
             display: flex;
@@ -84,7 +84,7 @@
             color: var(--secondary);
         }
         
-        /* меню */
+        /* Хамменю */
         .hamburger {
             display: none;
             flex-direction: column;
@@ -363,7 +363,7 @@
         }
 
         .form-section {
-            background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)), url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+            background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)), url('../images/дети.jpg') no-repeat center center/cover;
             color: white;
             text-align: center;
         }
@@ -509,10 +509,10 @@
             
             .nav-links {
                 position: fixed;
-                top: 70px;
+                top: 60px;
                 left: -100%;
                 width: 100%;
-                height: calc(100vh - 70px);
+                height: 100vh;
                 background: rgba(44, 62, 80, 0.98);
                 flex-direction: column;
                 align-items: center;
@@ -562,7 +562,7 @@
                 align-items: center;
             }
             
-            /* Уменьшение секции практической информации */
+            /* Уменьшение секции практич */
             .info {
                 padding: 40px 0;
             }
@@ -592,6 +592,19 @@
         }
         
         @media (max-width: 576px) {
+
+            .info-item {
+            background: white;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+            padding: 30px;
+            width: 100%;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
             h1 {
                 font-size: 1.8rem;
             }
@@ -617,13 +630,10 @@
                 grid-template-columns: 1fr;
             }
             
-            .info-grid {
-                grid-template-columns: 1fr;
-            }
             
             /* Дополнительное уменьшение для очень маленьких экранов */
             .info-item {
-                padding: 15px;
+                padding: 30px;
             }
             
             .info-item i {
@@ -644,6 +654,6 @@
             }
             
             .contact-item p {
-                font-size: 0.9rem;
+                font-size: 1.2rem;
             }
         }
