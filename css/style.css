@@ -326,6 +326,7 @@
             font-style: italic;
             color: var(--dark);
             opacity: 0.7;
+            justify-self: center;
         }
 
         .info {
@@ -363,7 +364,7 @@
         }
 
         .form-section {
-            background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)), url('../images/дети.jpg') no-repeat center center/cover;
+            background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)), url('../images/sweets.jpg') no-repeat center center/cover;
             color: white;
             text-align: center;
         }
@@ -616,6 +617,19 @@
             transition: all 0.3s ease;
         }
 
+        .hero {
+            background: 
+                linear-gradient(to bottom, transparent 0%, rgba(255,255,255,1) 500%),
+                linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+                url('../images/пятьлет.jpg');
+                width: 100%;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
             h1 {
                 font-size: 1.8rem;
             }
@@ -625,7 +639,7 @@
             }
             
             .hero h1 {
-                font-size: 2rem;
+                font-size: 1.5rem;
             }
             
             .tasty {
@@ -642,7 +656,7 @@
             }
             
             .form-section {
-            background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)), url('../images/group.jpg') no-repeat center center/cover;
+            background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)), url('../images/дети.jpg') no-repeat center center/cover;
             color: white;
             text-align: center;
         }
